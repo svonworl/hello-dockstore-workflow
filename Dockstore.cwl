@@ -1,5 +1,5 @@
 #
-# This is a two-step workflow which uses "revtool" and "sorttool" defined above.
+# This is a funked out workflow
 #
 class: Workflow
 description: "Reverse the lines in a document, then sort those lines."
