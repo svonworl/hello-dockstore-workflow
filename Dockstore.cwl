@@ -1,5 +1,5 @@
 #
-# This is a very funked out workflow
+# This is a not quite so funked out workflow
 #
 class: Workflow
 description: "Reverse the lines in a document, then sort those lines."
