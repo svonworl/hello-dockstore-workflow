@@ -5,6 +5,9 @@ task ps {
   output {
     File procs = stdout()
   }
+  runtime {
+    docker: "ubuntu:latest"
+  }
 }
 
 task cgrep {
@@ -25,6 +28,9 @@ task wc {
   }
   output {
     Int count = read_int(stdout())
+  }
+  runtime {
+    docker: "ubuntu:latest"
   }
 }
 
