@@ -1,5 +1,9 @@
 #!/usr/bin/env cwl-runner
 class: Workflow
+dct:creator:
+  foaf:name: testAuthor
+  foaf:mbox: "testEmail"
+
 requirements:
   - class: ScatterFeatureRequirement
   - class: DockerRequirement
