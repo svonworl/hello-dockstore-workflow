@@ -24,18 +24,18 @@ steps:
   - id: "#grep"
     run: {import: grep.cwl}
     scatter: "#grep.infile"
-    inputs:
+    in:
       - id: "#grep.pattern"
         source: "#pattern"
       - id: "#grep.infile"
         source: "#infile"
-    outputs:
+    out:
       - id: "#grep.outfile"
 
   - id: "#wc"
     run: {import: wc.cwl}
-    inputs:
+    in:
       - id: "#wc.infile"
         source: "#grep.outfile"
-    outputs:
+    out:
       - id: "#wc.outfile"
